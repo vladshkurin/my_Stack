@@ -11,12 +11,7 @@ class MyStack
   end
 
   def pop
-    @stack[-1]
+    @stack.delete_at(-1)
+    return @stack
   end
 end
-
-  my_stack = MyStack.new
-  my_stack.push('qwer')
-  my_stack.push(100)
-  my_stack.push(:symbol)
-  my_stack.pop()
