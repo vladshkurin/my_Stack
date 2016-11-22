@@ -9,11 +9,9 @@ describe MyStack do
       stack.push 'Ruby'
       stack.push 'on'
       stack.push 'Rails'
-      expect(stack.instance_variable_get(:@stack).last).to eq 'Rails'
-      stack.pop
-      expect(stack.instance_variable_get(:@stack).last).to eq 'on'
-      stack.pop
-      expect(stack.instance_variable_get(:@stack).last).to eq 'Ruby'
+      expect(stack.pop).to eq 'Rails'
+      expect(stack.pop).to eq 'on'
+      expect(stack.pop).to eq 'Ruby'
     end
   end
 end
