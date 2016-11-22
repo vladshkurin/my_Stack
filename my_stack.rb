@@ -1,5 +1,3 @@
-require 'pry'
-
 class MyStack
 
   def initialize
@@ -11,7 +9,7 @@ class MyStack
   end
 
   def pop
+    @stack.last
     @stack.delete_at(-1)
-    return @stack
   end
 end
