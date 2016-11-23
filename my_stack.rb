@@ -1,7 +1,4 @@
-require 'pry'
-
 class MyStack
-
   def initialize
     @stack = []
   end

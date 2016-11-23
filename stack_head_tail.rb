@@ -1,8 +1,4 @@
-require 'benchmark'
-require 'pry'
-
 class StackHeadTail
-
   def initialize
     @stack = []
   end
