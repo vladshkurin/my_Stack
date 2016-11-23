@@ -1,4 +1,3 @@
-require 'pry'
 require './stack_head_tail'
 
 describe StackHeadTail do
